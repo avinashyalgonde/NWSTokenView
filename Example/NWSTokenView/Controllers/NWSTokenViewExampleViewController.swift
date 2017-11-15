@@ -329,7 +329,9 @@ class NWSTokenViewExampleViewController: UIViewController, UITableViewDataSource
         if text == ""
         {
             isSearching = false
+            tokenView.reloadData()
             tableView.reloadData()
+            tokenView.layoutIfNeeded()
             return
         }
         
